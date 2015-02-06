@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Fog Lifter</title>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/app.css" type="text/css" media="screen">
+<link href="css/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/videos.css" type="text/css" media="screen">
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="application/javascript" src="scripts/mdetect.js"></script>
+<script type="application/javascript" src="scripts/iscroll-lite.js?v4"></script>
+<script type="application/javascript" src="scripts/database.js"></script>
+ <script src="scripts/video.js"></script>
+<script type="application/javascript" src="scripts/app.js"></script>
+<script>
+	var vidID = getUrlVars()["vid"];
+	var catID = getUrlVars()["catid"];
+	
+	
+	$(document).ready(function () {
+	getVideo(vidID, catID);
+	setTimeout( function() {
+		selectAllQueueStates();
+		selectAllFavoriteStates();
+	}, 1000);
+	$(".thumbs[id='"+catID+"']").show();
+	});
+</script>
+
+</head>
+<body>
+
+<!-- Start Application -->
+<div class="header">
+	<div class="main-header">
+			<a href="index.html" class="app-control videos on"><span class="icon mask">A</span>VIDEOS</a>
+			<a href="queue.html" class="app-control videos"><span class="icon mask">B</span>QUEUE<span class="counter"><strong>5</strong></span></a>
+			<a href="favorites.html" class="app-control videos"><span class="icon mask">C</span>FAVORITES</a>
+	
+		<img src="images/branding-logo.png" class="branding" />
+	</div>
+	<div class="sub-header">
+		<h2 class="section-title">VIDEO CATEGORIES</h2>
+	</div>
+</div>
+<!--Start Video Content -->
+	<div class="video-content-container">
+		<!--Start Video Player -->
+		<div class="video-player">
+		
+		</div>
+		<!-- Start Video Information -->
+		<div class="video-info">
+			
+		</div>
+	</div>
+	
+	<div class="more-videos-container">
+	
+	
+			<!-- Start Slider -->
+			<div class="thumbs-slider">
+					<ul class="thumbs slide" id="0">
+						<li>
+							<a href="video.html?vid=0&catid=0" class="video-link">
+								<div class="title">Jack Keeter ÜberLifter</div>
+								<img src="video-thumbs/thumbs/01.jpg" alt="01" class="thumb-img" />
+							</a>
+						</li>
+							<li>
+								<a href="video.html?vid=1&catid=0" class="video-link">
+									<div class="title">FogLifterFilms Overview</div>
+									<img src="video-thumbs/thumbs/02.jpg" alt="01" class="thumb-img" />
+								</a>
+							</li>
+								<li>
+									<a href="video.html?vid=2&catid=0" class="video-link">
+										<div class="title">Withdrawal Strategy</div>
+										<img src="video-thumbs/thumbs/03.jpg" alt="01" class="thumb-img" />
+									</a>
+								</li>
+									<li>
+										<a href="video.html?vid=3&catid=0" class="video-link">
+											<div class="title">Tax and Income Planning</div>
+											<img src="video-thumbs/thumbs/04.jpg" alt="01" class="thumb-img" />
+										</a>
+									</li>
+									<li>
+										<a href="video.html?vid=4&catid=0" class="video-link">
+											<div class="title">Understanding Tax Lingo</div>
+											<img src="video-thumbs/thumbs/05.jpg" alt="01" class="thumb-img" />
+										</a>
+									</li>
+					</ul>
+					
+					<ul class="thumbs slide" id="1">
+						<li>
+							<a href="video.html?vid=5&catid=1" class="video-link">
+								<div class="title"> Intro to SIPS</div>
+								<img src="video-thumbs/thumbs/06.jpg" alt="01" class="thumb-img" />
+							</a>
+						</li>
+							<li>
+								<a href="video.html?vid=6&catid=1" class="video-link">
+									<div class="title">Indexing-New Asset Class</div>
+									<img src="video-thumbs/thumbs/07.jpg" alt="01" class="thumb-img" />
+								</a>
+					
+							</li>
+								<li>
+									<a href="video.html?vid=7&catid=1" class="video-link">
+										<div class="title">Funding Your IUL Policy</div>
+										<img src="video-thumbs/thumbs/08.jpg" alt="01" class="thumb-img" />
+									</a>
+								
+								</li>
+									<li>
+										<a href="video.html?vid=8&catid=1" class="video-link">
+											<div class="title">What is an Annuity?</div>
+											<img src="video-thumbs/thumbs/09.jpg" alt="01" class="thumb-img" />
+										</a>
+									
+									</li>
+										<li>
+											<a href="video.html?vid=9&catid=1" class="video-link">
+												<div class="title">Understanding Indexing</div>
+												<img src="video-thumbs/thumbs/10.jpg" alt="01" class="thumb-img" />
+											</a>
+									
+										</li>
+						
+					</ul>
+			</div>
+		</div>
+
+	
+</body>
+</html>

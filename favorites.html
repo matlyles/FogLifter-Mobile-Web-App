@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Fog Lifter</title>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/app.css" type="text/css" media="screen">
+<link href="css/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/videos.css" type="text/css" media="screen">
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="application/javascript" src="scripts/mdetect.js"></script>
+<script type="application/javascript" src="scripts/iscroll-lite.js?v4"></script>
+<script type="application/javascript" src="scripts/database.js"></script>
+<script type="application/javascript" src="scripts/app.js"></script>
+
+<script>
+localStorage.setItem('vidstate', '0');
+loadFavorites();
+</script>
+</head>
+<body>
+
+<!-- Start Application -->
+<div class="header">
+	<div class="main-header">
+			<a href="index.html" class="app-control videos"><span class="icon mask">A</span>VIDEOS</a>
+			<a href="queue.html" class="app-control videos"><span class="icon mask">B</span>QUEUE<span class="counter"><strong>5</strong></span></a>
+			<a href="favorites.html" class="app-control videos on"><span class="icon mask">C</span>FAVORITES</a>
+	
+		<img src="images/branding-logo.png" class="branding" />
+	</div>
+	<div class="sub-header">
+		<h2 class="section-title">VIDEO CATEGORIES</h2>
+	</div>
+</div>
+<!--Start Video Content -->
+	<div class="queue-content-container">
+		<h1>You Don't Have Any Favorites Yet</h1>
+	</div>
+	
+</body>
+</html>

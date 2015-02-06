@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'iPadAppIcons';
+  src: url('../fonts/iPad-App-Icons.eot');
+  src: local('hashTagIcons'), 
+  url('../fonts/iPad-App-Icons.woff') format('woff'),
+  url('../fonts/iPad-App-Icons.ttf') format('truetype'), 
+  url('../fonts/iPad-App-Icons.svg#font') format('svg');
+}

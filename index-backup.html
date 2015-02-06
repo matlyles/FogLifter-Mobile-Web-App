@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Fog Lifter</title>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/app.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/videos.css" type="text/css" media="screen">
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="application/javascript" src="scripts/mdetect.js"></script>
+<script type="application/javascript" src="scripts/iscroll-lite.js?v4"></script>
+<!-- <script type="application/javascript" src="scripts/swipeview.js"></script> -->
+<script type="application/javascript" src="scripts/app.js"></script>
+
+
+</head>
+<body>
+<!-- Start Up Screen -->
+<!-- <div class="startup">
+	<div class="startup-box">
+		<div class="icon logo mask">A</div>
+		<div class="branding-title">
+			Fog Lifter
+		</div>
+		<div class="spinner"></div>
+	</div>
+</div> -->
+<!-- end Start Up Screen -->
+
+<!-- Start Application -->
+<div class="header">
+	<div class="main-header">
+		<a href="index.html" class="app-control videos on"><span class="icon mask">A</span>VIDEOS</a>
+		<a href="queue.html" class="app-control videos"><span class="icon mask">B</span>QUEUE<span class="counter"><strong>5</strong></span></a>
+		<a href="favorites.html" class="app-control videos"><span class="icon mask">C</span>FAVORITES</a>
+	
+		<img src="images/branding-logo.png" class="branding" />
+	</div>
+	<div class="sub-header">
+		<h2 class="section-title">VIDEO CATEGORIES</h2>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<!-- Category 1 - Investing -->
+			<li>
+				<div class="video-category-container">
+					<!-- titlebar -->
+					<div class="title-bar">
+						<div class="category-title">
+							<h2>INVESTING</h2>
+						</div>
+						<div class="category-panel">
+							<div class="videos-label">12 VIDEOS <span class="icon">G</span></div>
+							<a class="nav icon next">E</a>	<a class="nav icon prev disabled">D</a>
+						</div>
+					</div>
+					<!-- Video Thumbs -->
+					<div class="thumbs-container">
+						<!-- Start Slider -->
+						<div class="thumbs-slider">
+							<ul class="thumbs slide">
+								<li>
+									<a href="video.html?vid=0&catid=0" class="video-link">
+										<div class="title">"Timing the Market" Using Stock Valuations</div>
+										<img src="video-thumbs/category/investing/01.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue in-queue"><span class="icon">f</span> IN QUEUE</a>
+									</div>
+								</li>
+								<li>
+									<a href="video.html?vid=1&catid=0" class="video-link">
+										<div class="title">"Timing the Market" Using Stock Valuations</div>
+										<img src="video-thumbs/category/investing/02.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue"><span class="icon">I</span> ADD TO QUEUE</a>
+									</div>
+								</li>
+								<li>
+									<a href="video.html?vid=2&catid=0" class="video-link">
+										<div class="title">"Timing the Market" Using Stock Valuations</div>
+										<img src="video-thumbs/category/investing/03.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue"><span class="icon">I</span> ADD TO QUEUE</a>
+									</div>
+								</li>
+								<li>
+									<a href="video.html?vid=3&catid=0" class="video-link">
+										<div class="title">"Timing the Market" Using Stock Valuations</div>
+										<img src="video-thumbs/category/investing/04.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue"><span class="icon">I</span> ADD TO QUEUE</a>
+									</div>
+								</li>
+								<li>
+									<a href="video.html?vid=4&catid=0" class="video-link">
+										<div class="title">"Timing the Market" Using Stock Valuations</div>
+										<img src="video-thumbs/category/investing/05.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue"><span class="icon">I</span> ADD TO QUEUE</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+		
+		
+		</ul>
+	</div>
+</div>
+<div id="footer"></div>
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper');
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
+</body>
+</html>

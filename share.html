@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Fog Lifter</title>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/app.css" type="text/css" media="screen">
+<link href="css/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/videos.css" type="text/css" media="screen">
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="application/javascript" src="scripts/mdetect.js"></script>
+<script type="application/javascript" src="scripts/iscroll-lite.js?v4"></script>
+<!-- <script type="application/javascript" src="scripts/swipeview.js"></script> -->
+ <script src="scripts/video.js"></script>
+<script type="application/javascript" src="scripts/database.js"></script>
+<script type="application/javascript" src="scripts/app.js"></script>
+<script>
+	var vidID = getUrlVars()["vid"];
+	var catID = getUrlVars()["catid"];
+	
+	getSharedVideo(vidID, catID);
+</script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="main-header"><img src="images/branding-logo.png" class="branding" /></div>
+			<div class="sub-header"></div>
+	
+	<!-- end header -->
+<div style="width:1000px; margin:-70px auto 0 auto;">
+
+	<div class="video-content-container">
+			<!--Start Video Player -->
+			<div class="video-player">
+				<video id="thevideo" class="video-js vjs-default-skin" controls preload="none" poster="images/placer.png" data-setup="{}">
+			 		<source src="" type="video/mp4" />
+				</video>
+			</div>
+			<!-- Start Video Information -->
+			<div class="video-info"></div>
+	</div>
+	
+	<div class="find-out-more">Find out more about what <strong>FogLifter</strong> has to offer. <a>Visit Foglifter</a></div>
+	
+</div>
+</body>
+</html>

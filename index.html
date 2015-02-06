@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Fog Lifter</title>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/app.css" type="text/css" media="screen">
+<link href="css/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/videos.css" type="text/css" media="screen">
+
+<!-- <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
+<script type="application/javascript" src="scripts/jquery-1.4.2.js"></script>
+<script type="application/javascript" src="scripts/mdetect.js"></script>
+<script type="application/javascript" src="scripts/iscroll-lite.js?v4"></script>
+<script type="application/javascript" src="scripts/database.js"></script>
+<script type="application/javascript" src="scripts/video.js"></script>
+<script type="application/javascript" src="scripts/app.js"></script>
+<script>
+localStorage.setItem('vidstate', '0');
+localStorage.setItem('currentSection', 'thumbs');
+</script>
+
+</head>
+<body>
+<!-- Start Up Screen -->
+<!-- <div class="startup">
+	<div class="startup-box">
+		<div class="icon logo mask">A</div>
+		<div class="branding-title">
+			Fog Lifter
+		</div>
+		<div class="spinner"></div>
+	</div>
+</div> -->
+<!-- end Start Up Screen -->
+
+<!-- Start Application -->
+<div class="header">
+	<div class="main-header">
+		<a class="app-control thumbs on" rel="thumbs"><span class="icon mask">A</span>VIDEOS</a>
+		<a class="app-control queue" rel="queue"><span class="icon mask">B</span>QUEUE<span class="counter"></span></a>
+		<a class="app-control fav" rel="fav"><span class="icon mask">C</span>FAVORITES</a>
+		<img src="images/branding-logo.png" class="branding" />
+	</div>
+	<div class="sub-header">
+		<h2 class="section-title">VIDEO CATEGORIES</h2>
+	</div>
+</div>
+
+
+<!-- start video page -->
+<div class="section video" id="video-page">
+<!--Start Video Content -->
+	<div class="video-content-container">
+		<!--Start Video Player -->
+		<div class="video-player">
+			<video id="thevideo" class="video-js vjs-default-skin" controls preload="none" poster="images/placer.png" data-setup="{}">
+		 		<source src="" type="video/mp4" />
+			</video>
+			
+		</div>
+		<!-- Start Video Information -->
+		<div class="video-info">
+			
+		</div>
+	</div>
+	
+	<div class="more-videos-container">
+	
+	
+			<!-- Start Slider -->
+			<div class="thumbs-slider">
+					<ul class="thumbs slide video-cat" id="0">
+									<li>
+										<a id="0" rel="0" class="video-link" title="categories">
+											<div class="title">Jack Keeter ÜberLifter</div>
+											<img src="video-thumbs/thumbs/01.jpg" alt="01" class="thumb-img" />
+										</a>
+									</li>
+										<li>
+											<a id="1" rel="0" class="video-link" title="categories">
+												<div class="title">FogLifterFilms Overview</div>
+												<img src="video-thumbs/thumbs/02.jpg" alt="01" class="thumb-img" />
+											</a>
+										</li>
+											<li>
+												<a id="2" rel="0" class="video-link" title="categories">
+													<div class="title">Withdrawal Strategy</div>
+													<img src="video-thumbs/thumbs/03.jpg" alt="01" class="thumb-img" />
+												</a>
+											</li>
+												<li>
+													<a id="3" rel="0" class="video-link" title="categories">
+														<div class="title">Tax and Income Planning</div>
+														<img src="video-thumbs/thumbs/04.jpg" alt="01" class="thumb-img" />
+													</a>
+												</li>
+												<li>
+													<a id="4" rel="0" class="video-link" title="categories">
+														<div class="title">Understanding Tax Lingo</div>
+														<img src="video-thumbs/thumbs/05.jpg" alt="01" class="thumb-img" />
+													</a>
+
+												</li>
+					</ul>
+					
+					<ul class="thumbs slide video-cat" id="1">
+							<li>
+								<a id="5" rel="1" class="video-link" title="categories">
+									<div class="title"> Intro to SIPS</div>
+									<img src="video-thumbs/thumbs/06.jpg" alt="01" class="thumb-img" />
+								</a>
+							</li>
+								<li>
+									<a id="6" rel="1" class="video-link" title="categories">
+										<div class="title">Indexing-New Asset Class</div>
+										<img src="video-thumbs/thumbs/07.jpg" alt="01" class="thumb-img" />
+									</a>
+								</li>
+									<li>
+										<a id="7" rel="1" class="video-link" title="categories">
+											<div class="title">Funding Your IUL Policy</div>
+											<img src="video-thumbs/thumbs/08.jpg" alt="01" class="thumb-img" />
+										</a>
+									</li>
+										<li>
+											<a id="8" rel="1" class="video-link" title="categories">
+												<div class="title">What is an Annuity?</div>
+												<img src="video-thumbs/thumbs/09.jpg" alt="01" class="thumb-img" />
+											</a>
+										</li>
+											<li>
+												<a id="9" rel="1" class="video-link" title="categories">
+													<div class="title">Understanding Indexing</div>
+													<img src="video-thumbs/thumbs/10.jpg" alt="01" class="thumb-img" />
+												</a>
+											</li>
+					</ul>
+			</div>
+		</div>
+</div>
+<!-- end video page -->
+
+
+<div id="thumbs" class="section all-thumbs">
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<!-- Category 1 - Investing -->
+			<li>
+				<div class="video-category-container">
+					<!-- titlebar -->
+					<div class="title-bar">
+						<div class="category-title">
+							<h2>Tax and Income Planning</h2>
+						</div>
+						<div class="category-panel">
+							<div class="videos-label"></div>
+							<!-- <a class="nav icon next">E</a>	<a class="nav icon prev disabled">D</a> -->
+						</div>
+					</div>
+					<!-- Video Thumbs -->
+					<div class="thumbs-container">
+						<!-- Start Slider -->
+						<div class="thumbs-slider">
+							<ul class="thumbs slide">
+								<li>
+									<a id="0" rel="0" class="video-link" title="categories">
+										<div class="title">Jack Keeter ÜberLifter</div>
+										<img src="video-thumbs/thumbs/01.jpg" alt="01" class="thumb-img" />
+									</a>
+									<div class="mini-actions">
+										<a class="add-to-queue" rel="0"><span class="icon">I</span> ADD TO QUEUE</a>
+									</div>
+								</li>
+									<li>
+										<a id="1" rel="0" class="video-link" title="categories">
+											<div class="title">FogLifterFilms Overview</div>
+											<img src="video-thumbs/thumbs/02.jpg" alt="01" class="thumb-img" />
+										</a>
+										<div class="mini-actions">
+											<a class="add-to-queue" rel="1"><span class="icon">I</span> ADD TO QUEUE</a>
+										</div>
+									</li>
+										<li>
+											<a id="2" rel="0" class="video-link" title="categories">
+												<div class="title">Withdrawal Strategy</div>
+												<img src="video-thumbs/thumbs/03.jpg" alt="01" class="thumb-img" />
+											</a>
+											<div class="mini-actions">
+												<a class="add-to-queue" rel="2"><span class="icon">I</span> ADD TO QUEUE</a>
+											</div>
+										</li>
+											<li>
+												<a id="3" rel="0" class="video-link" title="categories">
+													<div class="title">Tax and Income Planning</div>
+													<img src="video-thumbs/thumbs/04.jpg" alt="01" class="thumb-img" />
+												</a>
+												<div class="mini-actions">
+													<a class="add-to-queue" rel="3"><span class="icon">I</span> ADD TO QUEUE</a>
+												</div>
+											</li>
+											<li>
+												<a id="4" rel="0" class="video-link" title="categories">
+													<div class="title">Understanding Tax Lingo</div>
+													<img src="video-thumbs/thumbs/05.jpg" alt="01" class="thumb-img" />
+												</a>
+												<div class="mini-actions">
+													<a class="add-to-queue" rel="4"><span class="icon">I</span> ADD TO QUEUE</a>
+												</div>
+											</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			
+			
+				<!-- Category 1 - Investing -->
+				<li>
+					<div class="video-category-container">
+						<!-- titlebar -->
+						<div class="title-bar">
+							<div class="category-title">
+								<h2>Insurance & Annuities</h2>
+							</div>
+							<div class="category-panel">
+								<div class="videos-label"></div>
+								<!-- <a class="nav icon next">E</a>	<a class="nav icon prev disabled">D</a> -->
+							</div>
+						</div>
+						<!-- Video Thumbs -->
+						<div class="thumbs-container">
+							<!-- Start Slider -->
+							<div class="thumbs-slider">
+								<ul class="thumbs slide">
+									<li>
+										<a id="5" rel="1" class="video-link" title="categories">
+											<div class="title"> Intro to SIPS</div>
+											<img src="video-thumbs/thumbs/06.jpg" alt="01" class="thumb-img" />
+										</a>
+										<div class="mini-actions">
+											<a class="add-to-queue" rel="5"><span class="icon">I</span> ADD TO QUEUE</a>
+										</div>
+									</li>
+										<li>
+											<a id="6" rel="1" class="video-link" title="categories">
+												<div class="title">Indexing-New Asset Class</div>
+												<img src="video-thumbs/thumbs/07.jpg" alt="01" class="thumb-img" />
+											</a>
+											<div class="mini-actions">
+												<a class="add-to-queue" rel="6"><span class="icon">I</span> ADD TO QUEUE</a>
+											</div>
+										</li>
+											<li>
+												<a id="7" rel="1" class="video-link" title="categories">
+													<div class="title">Funding Your IUL Policy</div>
+													<img src="video-thumbs/thumbs/08.jpg" alt="01" class="thumb-img" />
+												</a>
+												<div class="mini-actions">
+													<a class="add-to-queue" rel="7"><span class="icon">I</span> ADD TO QUEUE</a>
+												</div>
+											</li>
+												<li>
+													<a id="8" rel="1" class="video-link" title="categories">
+														<div class="title">What is an Annuity?</div>
+														<img src="video-thumbs/thumbs/09.jpg" alt="01" class="thumb-img" />
+													</a>
+													<div class="mini-actions">
+														<a class="add-to-queue" rel="8"><span class="icon">I</span> ADD TO QUEUE</a>
+													</div>
+												</li>
+													<li>
+														<a id="9" rel="1" class="video-link" title="categories">
+															<div class="title">Understanding Indexing</div>
+															<img src="video-thumbs/thumbs/10.jpg" alt="01" class="thumb-img" />
+														</a>
+														<div class="mini-actions">
+															<a class="add-to-queue" rel="9"><span class="icon">I</span> ADD TO QUEUE</a>
+														</div>
+													</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			
+		
+			
+		
+		</ul>
+	</div>
+</div>
+</div>
+
+<!-- Start Queue Section -->
+<div id="queue" class="section my-queue">
+	<div class="queue-content-container">
+		<div class="placer icon">B</div>
+		<h1>You don't have any videos in your queue.</h1>
+	</div>
+</div>
+
+<!-- Start Favorites Section -->
+<div id="fav" class="section my-favs">
+	<div class="favorites-content-container">
+		<div class="placer icon">C</div>
+		<h1>You don't have any favorites.</h1>
+	</div>
+</div>
+
+
+<div id="footer"></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper');
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
+</body>
+</html>

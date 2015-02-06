@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Videos>
+	
+		<video id="0" catid="0" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_Uberlifter_JackKeeter_711x400.mp4" thumb="01.jpg" poster="01.jpg" title="Jack Keeter ÜberLifter" desc="As a member of the Jack Keeter Study Group, you’ll have the opportunity to gain access to the full library of FogLifters."></video>
+		<video id="1" catid="0" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_FLF_Overview_711x400.mp4" thumb="02.jpg" poster="02.jpg" title="FogLifterFilms Overview" desc="You’ll probably spend 90,000 hours on your career. Make sure you understand some key financial concepts."></video>
+		
+		<video id="2" catid="0" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_Withdrawal_Strategy_1280x720.mp4" thumb="03.jpg" poster="03.jpg" title="Withdrawal Strategy" desc="The most important decision in retirement is what accounts should fund it."></video>
+		<video id="3" catid="0" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_Income_TaxPlanning_711x400.mp4" thumb="04.jpg" poster="04.jpg" title="Tax and Income Planning" desc="With lower interest rates and smaller nest eggs, use the tax code wisely."></video>
+		<video id="4" catid="0" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_IncomeTax_Short_1280x720.mp4" thumb="05.jpg" poster="05.jpg" title="Understanding Tax Lingo" desc="Talking to your tax accountant can feel like speaking a foreign language."></video>
+
+		<video id="5" catid="1" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_SIPS_711x400.mp4" thumb="06.jpg" poster="06.jpg" title=" Intro to SIPS" desc="Diversify time horizon and investments to structure your income strategy"></video>
+		<video id="6" catid="1" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_Indexing_New_Asset_Class_711x400.mp4" thumb="07.jpg" poster="07.jpg" title="Indexing-New Asset Class" desc="Use annuities and life insurance in a new asset class called indexing."></video>
+		
+		<video id="7" catid="1" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_Funding_Your_IUL_Policy_1280x720.mp4" thumb="08.jpg" poster="08.jpg" title="Funding Your IUL Policy" desc="Paying your life insurance policy premiums is like driving on a toll road."></video>
+		<video id="8" catid="1" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_FogLoop_1_1280x720.mp4" thumb="09.jpg" poster="09.jpg" title="What is an Annuity?" desc="Understand the mechanics of annuities, its benefits and different types."></video>
+		<video id="9" catid="1" url="https://s3.amazonaws.com/fogliftermedia/flf/FLM_FogLoop_2_1280x720.mp4" thumb="10.jpg" poster="10.jpg" title="Understanding Indexing" desc="Receive an account credit with the stated interest rate or a call option."></video>
+
+
+</Videos>

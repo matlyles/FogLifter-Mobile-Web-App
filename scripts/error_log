@@ -1,0 +1,4 @@
+[26-Mar-2012 11:39:28] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Unknown modifier '(' in /home5/mathewly/public_html/work/foglifter/ipadapp2/scripts/process-share.php on line 22
+[26-Mar-2012 11:43:42] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Unknown modifier '(' in /home5/mathewly/public_html/work/foglifter/ipadapp2/scripts/process-share.php on line 22
+[26-Mar-2012 11:46:00] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Unknown modifier '(' in /home5/mathewly/public_html/work/foglifter/ipadapp2/scripts/process-share.php on line 22
+[26-Mar-2012 11:53:36] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Unknown modifier '(' in /home5/mathewly/public_html/work/foglifter/ipadapp2/scripts/process-share.php on line 44
